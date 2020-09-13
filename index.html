@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Всеукраїнська юніорська олімпіада">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Всеукраїнська юніорська олімпіада</title>
+ </head>
+ <body>
+    <nav>
+         <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <label class="logo">ВЮІО</label>
+        <ul>
+            <li><a class="active" href="">Головна</a></li>
+            <li><a href="">Відбіркові тури</a></li>
+            <li><a href="">Фінал</a></li>
+            <li><a href="">Журі</a></li>
+            <li><a href="">Положення</a></li>
+            <li><a href="">Телеграм</a></li>
+        </ul>
+    </nav>
+    <!-- Swiperslider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./img/team1.jpeg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/team2.jpeg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/team4.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="container">
+        <div class="offer">
+            <div class="content">
+                <h2 class="titleText">
+                    Запрошуємо взяти участь у Всеукраїнській юніорській олімпіаді з інформатики та Всеукраїнській дівочій олімпіаді з інформатики.
+                </h2>
+                <p class="text">
+                Кращі учасники представлятимуть Україну на Європейській юніорській та Європейські дівочій олімпіадах з інформатики.
+                В юніорській олімпіаді можуть взяти участь усі школярі України, які народилися у 2006-му році або пізніше. 
+                У дівочій олімпіаді можуть взяти участь лише учениці шкіл України.
+                </p>
+            </div>
+            <div class="imgBox">
+                <img src="./img/team3.jpeg" alt="">
+            </div>
+        </div>
+        <div class="rule">
+            <div class="backgroundDiv"></div>
+            <h2>Опис відбіркових турів</h2>
+            <div class="cardsDescription">
+                <div class="itemDescription">
+                    <div class="titleDescription">
+                        <h2>Хто може зареєструватися?</h2>
+                    </div>
+                    <div class="description">
+                        <p>Кожен охочий може зареєструватися на відбірковий етап.</p>
+                    </div>
+                </div>
+                <div class="itemDescription">
+                    <div class="titleDescription">
+                        <h2>Як проходитиме турнір?</h2>
+                    </div>
+                    <div class="description">
+                        <p>Відбірковий етап складається з трьох онлайн турів, на кожному з яких буде запропоновано по п'ять задач. 
+                        </p>
+                    </div>
+                </div>
+                <div class="itemDescription">
+                    <div class="titleDescription">
+                        <h2>Як буде оцінюватись задача?</h2>
+                    </div>
+                    <div class="description">
+                        <p>Кожна задача буде оцінюватися у 20, 30 чи 50 балів у залежності від туру. </p>
+                    </div>
+                </div>
+                <div class="itemDescription">
+                    <div class="titleDescription">
+                        <h2>Як будуть тестуватися задачі?</h2>
+                    </div>
+                    <div class="description">
+                        <p>Розв’язки учасників будуть тестувати онлайн на тестах, сумарна ціна яких дорівнює половині ціні за задачу. 
+                            Останнє рішення учасника по кожній задачі буде перетестоване на повному наборі тестів після завершення туру.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>  
+ </body>
+</html>
+ 

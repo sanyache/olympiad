@@ -1,0 +1,276 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: 'Roboto', sans-serif;
+}
+nav
+{
+  background: #111111;
+  height: 80px;
+  width: 100%;
+}
+label.logo
+{
+  color: #ebb70c;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;  
+}
+nav ul
+{
+  float: right;
+  margin-right: 20px;
+  list-style: none;
+}
+nav ul li
+{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 10px;
+}
+nav ul li a
+{
+  text-decoration: none;
+  padding: 7px 13px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+nav ul li a.active,nav ul li a:hover
+{
+  background: #ebb70c;
+  transition: 0.5s;  
+}
+.checkbtn
+{
+  font-size: 30px;
+  color: #ebb70c;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none; 
+}
+#check
+{
+  display: none;  
+}
+.swiper-container {
+  width: 100%;
+  height: 700px;
+
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.offer
+{
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offer .content
+{
+  min-width: 50%;
+  width: 50%;
+  text-align: end;
+  padding: 0 40px;
+}
+.offer .content .titleText
+{
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.text
+{
+  font-size: 20px;
+}
+.offer .imgBox
+{
+  position: relative;
+  min-width: 50%;
+  width: 50%;
+  min-height: 500px;
+}
+.offer .imgBox img
+{
+  width: 95%;
+}
+.rule
+{
+  position: relative;
+  background-color: #bd6a2e;
+  color: #fff;
+  margin: 40px 0;
+}
+.rule h2
+{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
+.rule .backgroundDiv
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.075;
+  background-image: url(../img/code.jpg);
+  background-size: cover;
+}
+.cardsDescription
+{
+  display: flex;
+  justify-content: space-around;
+}
+.cardsDescription .itemDescription
+{
+  width: 400px;
+}
+.cardsDescription .itemDescription .titleDescription h2
+{
+  font-size: 30px;
+  margin: 20px 0;
+}
+.cardsDescription .itemDescription .description p
+{
+  font-size: 20px;
+  padding: 20px 0;
+}
+/* media block */
+@media (max-width: 1665px)
+{
+  label.logo
+  {
+    font-size: 30px;
+    padding: 20px 50px;  
+  }
+  nav ul li
+  {
+    margin: 0;  
+  }
+  nav ul li a
+  {
+    font-size: 16px; 
+  }
+}
+@media (max-width: 991px)
+{
+  .offer
+  {
+    flex-direction: column;
+  }
+  .offer .content
+  {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .offer .imgBox
+  {
+    width: 100%;
+    margin: 0 10px;
+  }
+  .offer .imgBox img
+  {
+    padding-left: 20px;
+  }
+  .cardsDescription
+  {
+    flex-wrap: wrap;
+  }
+  .cardsDescription .itemDescription
+  {
+    min-width: 45%;
+  }
+}
+@media (max-width: 858px)
+{
+  .checkbtn
+  {
+    display: block;  
+  }
+  ul
+  {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li
+  {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px; 
+  }
+  nav ul li
+  {
+    font-size: 20px;  
+  }
+  #check:checked ~ ul
+  {
+    left: 0;  
+  }
+  .swiper-container
+  {
+    height: 500px;
+  }
+}
+@media (max-width: 768px)
+{
+  .offer
+  {
+      flex-direction: column;
+  }
+  .offer .content .titleText
+  {
+    font-size: 1.5em;
+  }
+  .cardsDescription
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardsDescription .itemDescription
+  {
+    width: 80%;
+  }
+  .rule
+  {
+    margin: 0;
+  }
+  .offer .imgBox
+  {
+    min-height: 410px;
+  }
+}  
+@media (max-width: 590px)
+{
+  .swiper-container
+  {
+    height: 350px;
+  }
+}
