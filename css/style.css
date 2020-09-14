@@ -11,8 +11,12 @@ body
 nav
 {
   background: #111111;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 80px;
   width: 100%;
+  z-index: 1000;
 }
 label.logo
 {
@@ -156,7 +160,79 @@ nav ul li a.active,nav ul li a:hover
   font-size: 20px;
   padding: 20px 0;
 }
-/* media block */
+.round
+{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.itemRound
+{
+  width: 350px;
+  height: 450px;
+  background: #b3b3b3;
+  text-align: center;
+  padding: 20px;
+}
+.roundTitle
+{
+  padding: 5px;
+  height: 50%;
+  color: #fff;
+}
+.roundTitle h2
+{
+  font-size: 40px;
+  padding-top: 20px;
+}
+.roundTitle p
+{
+  font-size: 28px;
+  padding-top: 20px;
+}
+.first
+{
+  background: linear-gradient(to right, #993d00,#ffa366);
+}
+.second
+{
+  background: linear-gradient(to right, #336699, #9fbfdf); 
+}
+.third
+{
+  background: linear-gradient(to right,  #800000, #e60000); 
+}
+.roundLinks
+{
+  height: 50%;
+  background: #fff;
+}
+.round .roundLinks ul
+{
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+}
+.roundLinks ul li a
+{
+  text-decoration: none;
+  padding: 7px 13px;
+  width: 130px;
+  display: inline-block;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  background:  #b3b3b3;
+  margin: 10px;
+}
+/* media block ================================================================= */
 @media (max-width: 1665px)
 {
   label.logo
@@ -209,7 +285,7 @@ nav ul li a.active,nav ul li a:hover
   {
     display: block;  
   }
-  ul
+  nav ul
   {
     position: fixed;
     width: 100%;
@@ -237,6 +313,15 @@ nav ul li a.active,nav ul li a:hover
   .swiper-container
   {
     height: 500px;
+  }
+  .round
+  {
+    flex-direction: column;
+  }
+  .itemRound
+  {
+    width: 450px;
+    height: 525px;
   }
 }
 @media (max-width: 768px)
