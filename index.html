@@ -13,7 +13,7 @@
     <title>Всеукраїнська юніорська олімпіада</title>
  </head>
  <body>
-    <nav>
+    <nav class="nav" id="navbar">
          <input type="checkbox" id="check">
             <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
         <label class="logo">ВЮІО</label>
@@ -164,7 +164,22 @@
             prevEl: '.swiper-button-prev',
           },
         });
-      </script>  
+      </script>
+      <script type="text/javascript">
+        document.getElementById('navbar').addEventListener('click', function(e){
+            e.preventDefault();
+            parentLi = e.target.parentElement;
+            var menuList = this.querySelectorAll('ul > li > a');
+            menuList.forEach(el => {
+            if(el === e.target) { 
+                el.classList.add('active');
+            }
+            if(el.classList.contains('active') && el !== e.target) {
+                el.classList.remove('active');
+            }
+            });
+        });
+      </script>
  </body>
 </html>
  

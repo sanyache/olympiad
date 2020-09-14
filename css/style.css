@@ -194,15 +194,15 @@ nav ul li a.active,nav ul li a:hover
 }
 .first
 {
-  background: linear-gradient(to right, #993d00,#ffa366);
+  background: #f2bd0d;
 }
 .second
 {
-  background: linear-gradient(to right, #336699, #9fbfdf); 
+  background: #aa8409 ; 
 }
 .third
 {
-  background: linear-gradient(to right,  #800000, #e60000); 
+  background: #614b05; 
 }
 .roundLinks
 {
