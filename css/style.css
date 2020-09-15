@@ -81,20 +81,20 @@ nav ul li a.active,nav ul li a:hover
 .offer
 {
   position: relative;
-  margin-top: 20px;
+  margin: 70px 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.offer .content
+.content
 {
   min-width: 50%;
   width: 50%;
   text-align: end;
   padding: 0 40px;
 }
-.offer .content .titleText
+.content .titleText
 {
   font-weight: 600;
   font-size: 2em;
@@ -120,7 +120,7 @@ nav ul li a.active,nav ul li a:hover
   position: relative;
   background-color: #bd6a2e;
   color: #fff;
-  margin: 40px 0;
+  margin: 50px 0;
 }
 .rule h2
 {
@@ -166,7 +166,7 @@ nav ul li a.active,nav ul li a:hover
   position: relative;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 .itemRound
 {
@@ -232,18 +232,22 @@ nav ul li a.active,nav ul li a:hover
   background:  #b3b3b3;
   margin: 10px;
 }
+.roundLinks ul li a:hover
+{
+  scale: 1.1;
+}
 .juri
 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 60px 0;
+  margin: 50px 0;
 }
 .itemJuri
 {
   width: 400px;
   height: 500px;
-  background: #AAC2BF;
+  background: #bd6a2e;
   margin:20px;
 }
 .itemJuri .imgBox
@@ -266,17 +270,50 @@ nav ul li a.active,nav ul li a:hover
 {
   text-align: center;
   margin: 20px;
-  color:  #0741b0;
+  color:  #fff;
 }
 .juriContent h2
 {
-  font-size: 36px;
+  font-size: 32px;
   margin-bottom: 15px;
 }
 .juriContent p
  {
    font-size: 24px;
    padding-top: 15px;
+ }
+ .juri .juriContent hr
+ {
+   display: block;
+   width: 50%;
+   margin: 0 auto;
+ }
+ #final
+ {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 60px auto;
+ }
+ #final .content
+ {
+   width: 350px;
+ }
+ #final .content h2
+ {
+   font-size: 40px;
+ }
+ #final ul li p
+ {
+   font-size: 18px;
+   padding: 10px 0;
+ }
+ #roundFinal
+ {
+   background: url(../img/goldcup.png);
+   background-size: 50%;
+   background-repeat: repeat-x;
+  text-shadow: 2px 2px #111111;
  }
 /* media block ================================================================= */
 @media (max-width: 1665px)
@@ -368,6 +405,14 @@ nav ul li a.active,nav ul li a:hover
   {
     width: 450px;
     height: 525px;
+  }
+  #final
+  {
+    flex-direction: column;
+  }
+  #final .content
+  {
+    text-align: left;
   }
 }
 @media (max-width: 768px)
