@@ -89,7 +89,7 @@ nav ul li a.active,nav ul li a:hover
 }
 .content
 {
-  min-width: 50%;
+  /* min-width: 50%; */
   width: 50%;
   text-align: end;
   padding: 0 40px;
@@ -166,7 +166,7 @@ nav ul li a.active,nav ul li a:hover
   position: relative;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  /* margin: 50px 0 50px -10px; */
 }
 .itemRound
 {
@@ -245,8 +245,8 @@ nav ul li a.active,nav ul li a:hover
 }
 .itemJuri
 {
-  width: 400px;
-  height: 500px;
+  width: 370px;
+  height: 470px;
   background: #bd6a2e;
   margin:20px;
 }
@@ -297,8 +297,10 @@ nav ul li a.active,nav ul li a:hover
  }
  #final .content
  {
-   width: 350px;
+   width: 38%;
  }
+
+ 
  #final .content h2
  {
    font-size: 40px;
@@ -313,7 +315,7 @@ nav ul li a.active,nav ul li a:hover
    background: url(../img/goldcup.png);
    background-size: 50%;
    background-repeat: repeat-x;
-  text-shadow: 2px 2px #111111;
+   text-shadow: 2px 2px #111111;
  }
 /* media block ================================================================= */
 @media (max-width: 1665px)
