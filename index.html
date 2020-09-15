@@ -19,7 +19,7 @@
         <label class="logo">ВЮІО</label>
         <ul>
             <li><a class="active" href="">Головна</a></li>
-            <li><a href="">Відбіркові тури</a></li>
+            <li><a href="#rule">Відбіркові тури</a></li>
             <li><a href="">Фінал</a></li>
             <li><a href="">Журі</a></li>
             <li><a href="">Положення</a></li>
@@ -56,7 +56,7 @@
             </div>
         </div>
         <!-- Rule block -->
-        <div class="rule">
+        <div class="rule" id="rule">
             <div class="backgroundDiv"></div>
             <h2>Опис відбіркових турів</h2>
             <div class="cardsDescription">
@@ -144,6 +144,60 @@
             </div>
         </div>
         <!-- Endblock round -->
+        <!-- Block juri -->
+        <div class="juri">
+            <div class="itemJuri">
+                <div class="imgBox">
+                    <img src="./img/juri/img-1.png" alt="">
+                </div>
+                <div class="juriContent">
+                    <h2>Шевченко Артем Іванович</h2>
+                    <hr>
+                    <p>Головний арбітр, доцент, викладач КНУ</p>
+                </div>
+            </div>
+            <div class="itemJuri">
+                <div class="imgBox">
+                    <img src="./img/juri/img-2.png" alt="">
+                </div>
+                <div class="juriContent">
+                    <h2>Стадніченко Марина Іванівна</h2>
+                    <hr>
+                    <p>Арбітр, викладач ліцею Політ</p>
+                </div>
+            </div>
+            <div class="itemJuri">
+                <div class="imgBox">
+                    <img src="./img/juri/img-3.png" alt="">
+                </div>
+                <div class="juriContent">
+                    <h2>Ткаченко Олексій Григорович</h2>
+                    <hr>
+                    <p>Арбітр, викладач ліцею Політ</p>
+                </div>
+            </div>
+            <div class="itemJuri">
+                <div class="imgBox">
+                    <img src="./img/juri/img-4.png" alt="">
+                </div>
+                <div class="juriContent">
+                    <h2>Зорій Юлія Іванівна</h2>
+                    <hr>
+                    <p>Арбітр, викладач ліцею Політ</p>
+                </div>
+            </div>
+            <div class="itemJuri">
+                <div class="imgBox">
+                    <img src="./img/juri/img-5.png" alt="">
+                </div>
+                <div class="juriContent">
+                    <h2>Хазарін Артем Борисович</h2>
+                    <hr>
+                    <p>Арбітр, викладач ліцею Політ</p>
+                </div>
+            </div>
+        </div>
+        <!-- Endblock juri -->
     </div>
       <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -177,7 +231,8 @@
             if(el.classList.contains('active') && el !== e.target) {
                 el.classList.remove('active');
             }
-            });
+            window.location.href = e.target;
+            });  
         });
       </script>
  </body>
