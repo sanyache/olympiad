@@ -369,6 +369,13 @@ nav ul li a.active,nav ul li a:hover
     font-size: 16px; 
   }
 }
+@media (max-width: 1060px)
+{
+  #final
+  {
+    flex-direction: column;
+  }
+}
 @media (max-width: 991px)
 {
   .offer
@@ -409,7 +416,7 @@ nav ul li a.active,nav ul li a:hover
   {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background: #2c3e50;
     top: 80px;
     left: -100%;
@@ -447,16 +454,12 @@ nav ul li a.active,nav ul li a:hover
   {
     flex-direction: column;
   }
-  #final .content
-  {
-    text-align: left;
-  }
 }
 @media (max-width: 768px)
 {
   .offer
   {
-      flex-direction: column;
+    flex-direction: column;
   }
   .offer .content .titleText
   {
@@ -478,6 +481,22 @@ nav ul li a.active,nav ul li a:hover
   .offer .imgBox
   {
     min-height: 410px;
+  }
+  #finalDescription
+  {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 450px;
+    margin-bottom: 40px;
+  }
+  #finalDescription .card
+  {
+    width: 450px;
+    height: 200px;
+    padding: 15px 5px;
+    margin: 5px;
   }
 }  
 @media (max-width: 590px)

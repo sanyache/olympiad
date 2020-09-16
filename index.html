@@ -17,7 +17,7 @@
          <input type="checkbox" id="check">
             <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
         <label class="logo">ВЮІО</label>
-        <ul>
+        <ul id="menu">
             <li><a class="active" href="">Головна</a></li>
             <li><a href="#rule">Відбіркові тури</a></li>
             <li><a href="#final">Фінал</a></li>
@@ -277,10 +277,10 @@
         });
       </script>
       <script type="text/javascript">
-        document.getElementById('navbar').addEventListener('click', function(e){
+        document.getElementById('menu').addEventListener('click', function(e){
             e.preventDefault();
             parentLi = e.target.parentElement;
-            var menuList = this.querySelectorAll('ul > li > a');
+            var menuList = this.querySelectorAll('li > a');
             menuList.forEach(el => {
             if(el === e.target) { 
                 el.classList.add('active');
