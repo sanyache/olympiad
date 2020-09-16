@@ -345,7 +345,9 @@
     <footer>
         <div class="copyright">©Copyright</div>
         <div class="contact person">Контактна особа: Ципко Антон Владиславович </div>
-        <div class="contactSocial">Email: tsypko@oi.in.ua  Telegram: @arsijo</div>
+        <div class="contactSocial"><a href="mailto:tsypko@oi.in.ua">Email: tsypko@oi.in.ua</a> 
+            <a href="https://t.me/arsijo"> Telegram: @arsijo</a>
+        </div>
     </footer>
       <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -370,7 +372,6 @@
       <script type="text/javascript">
         document.getElementById('menu').addEventListener('click', function(e){
             e.preventDefault();
-            parentLi = e.target.parentElement;
             var menuList = this.querySelectorAll('li > a');
             menuList.forEach(el => {
             if(el === e.target) { 
@@ -379,7 +380,9 @@
             if(el.classList.contains('active') && el !== e.target) {
                 el.classList.remove('active');
             }
-            window.location.href = e.target;
+            if(e.target.matches('a')) {
+                window.location.href = e.target;
+            }    
             });  
         });
       </script>
