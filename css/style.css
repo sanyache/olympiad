@@ -141,6 +141,14 @@ nav ul li a.active,nav ul li a:hover
   background-image: url(../img/code.jpg);
   background-size: cover;
 }
+#ruleFinal
+{
+  background: #d2451a;
+}
+#ruleFinal .backgroundDiv
+{
+  background-image: url(../img/binary.jpg); 
+}
 .cardsDescription
 {
   display: flex;
