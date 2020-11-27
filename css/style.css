@@ -425,6 +425,15 @@ nav ul li a.active,nav ul li a:hover
     font-size: 16px; 
   }
 }
+@media(max-width: 1370px)
+{
+  .round .roundLinks ul{
+    padding-top: 0;
+  }
+  .roundLinks ul li a{
+    padding: 5px 13px;
+  }
+}
 @media (max-width: 1060px)
 {
   #final
@@ -500,6 +509,15 @@ nav ul li a.active,nav ul li a:hover
   .round
   {
     flex-direction: column;
+  }
+  .round .roundLinks ul
+  {
+    padding: 10%;
+  }
+  .roundLinks ul li a 
+  {
+    width: 142px;
+    font-size: 18px;
   }
   .itemRound
   {
